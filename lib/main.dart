@@ -30,22 +30,23 @@ class CodeCampApp extends StatelessWidget {
               color: Colors.black,
             ),
             IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.person),
-                color: Colors.black),
+              onPressed: () {},
+              icon: const Icon(Icons.person),
+              color: Colors.black,
+            ),
           ],
         ),
         body: Container(
           height: double.infinity,
           width: double.infinity,
           decoration: const BoxDecoration(color: Colors.white),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
                   height: 200,
                   width: 200,
                   decoration: const BoxDecoration(
@@ -62,68 +63,69 @@ class CodeCampApp extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
-              Container(
-                height: 200,
-                width: 200,
-                decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.elliptical(100, 25)),
-                    color: Colors.pink),
-                child: const Center(
-                  child: Text(
-                    "Gidim",
-                    style: TextStyle(
-                        color: Colors.blueGrey,
-                        fontSize: 32,
-                        fontWeight: FontWeight.w800),
-                  ),
+                Container(
+                  height: 200,
+                  width: double.infinity,
+                  decoration: const BoxDecoration(color: Colors.pink),
+                  child: Image(image: AssetImage("assets/images/devre.png")),
                 ),
-              ),
-              Container(
-                height: 200,
-                width: 200,
-                color: Colors.yellow,
-                child: const Center(
-                  child: Text(
-                    "Hey",
-                    style: TextStyle(
-                        color: Colors.blueGrey,
-                        fontSize: 32,
-                        fontWeight: FontWeight.w800),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      height: 100,
-                      width: 100,
-                      decoration: const BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(41)),
+                Container(
+                  decoration: BoxDecoration(color: Colors.black),
+                  height: 200,
+                  width: double.infinity,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
                         color: Colors.blue,
+                        height: 200,
+                        width: 100,
                       ),
-                    ),
-                    Container(
-                      height: 100,
-                      width: 100,
-                      decoration: const BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(41)),
-                          color: Colors.blue),
-                    ),
-                    Container(
-                      height: 100,
-                      width: 100,
-                      decoration: const BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(41)),
-                          color: Colors.blue),
-                    )
-                  ],
+                      Container(
+                        color: Colors.yellow,
+                        height: 200,
+                        width: 100,
+                      ),
+                      Container(
+                        color: Colors.red,
+                        height: 200,
+                        width: 100,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 100,
+                        decoration: const BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(41)),
+                          color: Colors.blue,
+                        ),
+                      ),
+                      Container(
+                        height: 100,
+                        width: 100,
+                        decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(41)),
+                            color: Colors.blue),
+                      ),
+                      Container(
+                        height: 100,
+                        width: 100,
+                        decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(41)),
+                            color: Colors.blue),
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
